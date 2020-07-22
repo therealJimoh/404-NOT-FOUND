@@ -1,0 +1,102 @@
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    margin: 2rem;
+}
+
+
+main .main-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 7rem 1rem;
+}
+
+.main-content .first-content .img{
+    text-align: center;
+}
+
+.main-content .first-content .img img{
+    width: 60%;
+}
+
+.main-content .second-content{
+    margin: 0 5rem;
+}
+
+.main-content .second-content h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    word-spacing: .5em;
+    text-align: justify;
+}
+.main-content .second-content p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .8rem;
+    word-spacing: .8em;
+    text-align: justify;
+}
+
+.main-content .second-content .back{
+    margin: 2.5rem 0;
+    background: rgba(68, 49, 50, 0.973);
+    width: 25%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-content .second-content .back a{
+    
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer div{
+    text-align: center;
+}
+
+footer div p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+footer div p a{
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 750px){
+    .main-content .second-content h2{
+        word-spacing: normal;
+        font-size: 1.5rem;
+    }
+
+    .main-content .second-content p{
+        word-spacing: normal;
+        font-size: .9rem;
+    }
+
+    .main-content .second-content .back{
+        width: 55%;
+        padding: .1rem;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    main .main-content{
+        grid-template-columns: 100%;
+        margin: 2rem 0;
+    }
+
+    .main-content .second-content{
+        margin: 0 auto;
+    }
+
+}
